@@ -96,7 +96,7 @@ echo --- TOP PROCESSES BY MEMORY ---
     tasklist /fo table 2>nul | sort /r /+5
 ) >> "%LOGFILE%"
 
-tasklist /fo table /nh 2>nul | sort /r /+5 | findstr /v "^$" | more +1 | findstr /n "." | findstr "^[1-9]:" | head
+REM Show top 5 by memory via native tasklist sort
 
 REM Show top 5 processes
 set LINE=0

@@ -163,7 +163,8 @@ call :WriteSection "PID TO PROCESS MAPPING"
 
 echo.
 echo   --- Active listening ports and their processes ---
-echo   (Requires Administrator for process names)
+echo   NOTE: 'netstat -b' requires Administrator privileges.
+echo         If process names are missing, re-run as Administrator.
 netstat -b 2>nul | findstr /i "listening\|\.exe\|\.dll" | more
 
 REM ============================================================

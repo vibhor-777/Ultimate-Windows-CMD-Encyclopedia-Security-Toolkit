@@ -11,7 +11,6 @@ REM  SAFETY:  This script only launches other scripts.
 REM           Destructive operations require separate confirmation.
 REM ============================================================
 
-@echo off
 setlocal enabledelayedexpansion
 
 REM ============================================================

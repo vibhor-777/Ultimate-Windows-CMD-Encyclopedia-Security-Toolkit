@@ -152,7 +152,7 @@ call :WriteSection "SERVICES HOSTED IN SVCHOST PROCESSES"
 
 echo.
 echo   Services per svchost.exe instance:
-tasklist /svc 2>nul | findstr "svchost" | head
+tasklist /svc 2>nul | findstr "svchost" | more
 
 REM ============================================================
 REM  SECTION 5: Parent Process Relationships
